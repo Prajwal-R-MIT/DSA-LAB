@@ -20,6 +20,7 @@ class StackUsingLinkedList
     {
         this.Head = new Node(0);
     }
+
     public void PushToStack(int Item)
     {
         Node StackItem = new Node(Item);
@@ -30,6 +31,7 @@ class StackUsingLinkedList
         Head.NextAddress = StackItem;
         Head.Data++; 
     }
+
     public int PopFromStack()
     {
         if(Head.NextAddress == null)
@@ -42,6 +44,7 @@ class StackUsingLinkedList
         Head.NextAddress = Temp.NextAddress;
         return ReturnVal;
     }
+
     public int PeekOnStack()
     {
         if(Head.NextAddress == null)
@@ -51,6 +54,7 @@ class StackUsingLinkedList
         }
         return Head.NextAddress.Data;
     }
+
     public int IsEmpty()
     {
         if(Head.NextAddress == null)
@@ -59,6 +63,7 @@ class StackUsingLinkedList
         }
         return 0;
     }
+
     public void DisplayStackItems()
     {
         if(Head.NextAddress == null)
@@ -76,6 +81,7 @@ class StackUsingLinkedList
         }
         System.out.println("");
     }
+    
     public int CountOfItems()
     {
         return Head.Data;
