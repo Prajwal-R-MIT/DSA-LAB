@@ -43,6 +43,7 @@ class Playlist
             NewSong.LeftNode = TempNodeForTraversal.LeftNode;
             NewSong.RightNode = TempNodeForTraversal;
             TempNodeForTraversal.LeftNode.RightNode = NewSong;
+            TempNodeForTraversal.LeftNode = NewSong;
         }
         else
         {
@@ -71,6 +72,7 @@ class Playlist
             }
             String RemovedSong = TempNodeForTraversal.SongName;
             TempNodeForTraversal.LeftNode.RightNode = TempNodeForTraversal.RightNode;
+            TempNodeForTraversal.RightNode.LeftNode = TempNodeForTraversal.LeftNode;
             System.out.println("Removed Song: " + RemovedSong);
         }
         else
@@ -106,12 +108,12 @@ class Playlist
         else
         {
             Node TempNodeForTraversal = Head.RightNode;
-            while(TempNodeForTraversal != null)
+            while(TempNodeForTraversal.RightNode != null)
             {
                 TempNodeForTraversal = TempNodeForTraversal.RightNode;
             }
             System.out.println("Here's the playlist in Reverse order : ");
-            while(TempNodeForTraversal != null)
+            while(TempNodeForTraversal.LeftNode != null)
             {
                 System.out.println(TempNodeForTraversal.SongName);
                 TempNodeForTraversal = TempNodeForTraversal.LeftNode;
