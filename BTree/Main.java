@@ -27,3 +27,10 @@ class bTree
         this.Root = new bTreeNode(Order, true);
     }
 }
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+    }
+}

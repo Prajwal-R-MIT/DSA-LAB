@@ -122,7 +122,7 @@ class Playlist
     }
 }
 
-public class linkedlist_music_playlist 
+public class Main 
 {
     public static void main(String [] args)
     {
