@@ -110,7 +110,7 @@ public class Main
             int returnToMainMenu = 0;
             while(returnToMainMenu == 0)
             {
-                System.out.println("Choose your action : \n1 for Insert\n2 for Delete\n 3 for Display\n4 for Return to main menu\n5 for Exit");
+                System.out.println("Choose your action : \n1 for Insert\n2 for Delete\n3 for Display\n4 for Return to main menu\n5 for Exit");
                 int choice = inputReader.nextInt();
                 switch (choice) {
                     case 1:
